@@ -1,0 +1,278 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Length 3275 >>
+stream
+BT
+/F1 10 Tf
+42 810 Td
+13 TL
+(KONSOLIDIROVANNYY INZhENERNYY OTChET) Tj
+T*
+(RASSLEDOVANIE OTKAZA UETsN: SKV. 26-23296 \(PRIOBSKOE\)) Tj
+T*
+(Version: 3.0 | Prepared: 2026-02-10 11:37) Tj
+T*
+() Tj
+T*
+(RAZDEL 1. ZADAChA I METODOLOGIYa) Tj
+T*
+(Tsel: sformirovat edinyy konsolidirovannyy otchet po VSEM faylam arkhiva v repozitorii,) Tj
+T*
+(opredelit naibolee veroyatnuyu tsepochku pervoprichiny i podgotovit pozitsiyu zaschity prav) Tj
+T*
+(ekspluatatsii.) Tj
+T*
+(Metod v tekuschey srede: strukturnyy razbor RAR5 + inzhenernaya interpretatsiya sostava istochnikov.) Tj
+T*
+(Ogranichenie: pryamoe izvlechenie teksta iz vnutrennikh DOC/XLS/XLSX/PDF v srede ogranicheno) Tj
+T*
+(\(lokalno otsutstvuyut unrar/7z, ustanovka zavisimostey ogranichena proksi-politikoy\).) Tj
+T*
+() Tj
+T*
+(RAZDEL 2. TsELOSTNOST I INVENTARIZATsIYa ISTOChNIKOV) Tj
+T*
+(Arkhiv: R1.rar) Tj
+T*
+(Razmer arkhiva, bayt: 5 539 093) Tj
+T*
+(SHA256 arkhiva: 8d406022723e64adbc7cafe1dcaad2de9a1454675b8984bb59b3873f4c3f4d85) Tj
+T*
+(Kolichestvo vlozhennykh faylov: 10) Tj
+T*
+(Summarnyy szhatyy obem, bayt: 5 537 146) Tj
+T*
+(Summarnyy iskhodnyy obem, bayt: 8 101 386) Tj
+T*
+(Obschiy koeffitsient raspakovki: 1.463) Tj
+T*
+(Raspredelenie po tipam dokumentov: DOC=1, PDF=3, XLS=1, XLSX=5) Tj
+T*
+() Tj
+T*
+(RAZDEL 3. POLNYY REESTR FAYLOV \(VSE ISTOChNIKI\)) Tj
+T*
+(01. KhAL.Rasshirennyy sostav vody i vodoneftyanoy zhidkosti 2026-01-08 10-40-43.xlsx | type=XLSX |) Tj
+T*
+(packed=1 366 602 | unpacked=1 987 616 | ratio=1.45 | crc32=08963e2a) Tj
+T*
+(02. EP 1 str 26-23296.pdf | type=PDF | packed=451 906 | unpacked=472 115 | ratio=1.04 | crc32=d629f861) Tj
+T*
+(03. Log_result.xlsx | type=XLSX | packed=9 070 | unpacked=12 165 | ratio=1.34 | crc32=3db9f994) Tj
+T*
+(04. Akt VP 26-23296.pdf | type=PDF | packed=245 676 | unpacked=266 785 | ratio=1.09 | crc32=aa897ed3) Tj
+T*
+(05. Istoriya skvazhiny 23296 k. 26 Priobskoe na 8-1-2026_639034578355095841.xlsx | type=XLSX | packed=46) Tj
+T*
+(725 | unpacked=53 400 | ratio=1.14 | crc32=5f148264) Tj
+T*
+(06. Karta vyvoda na rezhim UETsN 2026-01-08 10-40-15.xlsx | type=XLSX | packed=8 788 | unpacked=11 689 |) Tj
+T*
+(ratio=1.33 | crc32=2ef2fdbe) Tj
+T*
+(07. Otchet po otkazu_26_23296_R-0_NnO-350sut_03.01.2026.doc | type=DOC | packed=1 694 010 | unpacked=1) Tj
+T*
+(869 824 | ratio=1.10 | crc32=1302028e) Tj
+T*
+(08. PIK 26-23296.pdf | type=PDF | packed=615 543 | unpacked=618 302 | ratio=1.00 | crc32=26263997) Tj
+T*
+(09. Skv. 23296 \(01.01.2025-31.01.2026\).xls | type=XLS | packed=61 904 | unpacked=867 328 | ratio=14.01 |) Tj
+T*
+(crc32=c78ec11f) Tj
+T*
+(10. Khal.6K 2026-01-08 10-40-35.xlsx | type=XLSX | packed=1 036 922 | unpacked=1 942 162 | ratio=1.87 |) Tj
+T*
+(crc32=f0d55873) Tj
+T*
+() Tj
+T*
+(RAZDEL 4. INZhENERNAYa INTERPRETATsIYa DOSE) Tj
+T*
+(4.1 Komplekt istochnikov soderzhit profilnyy otchet po otkazu, elektrotekhnicheskiy protokol, akty i) Tj
+T*
+(logi,) Tj
+T*
+(    istoriyu skvazhiny, kartu vyvoda na rezhim i rasshirennyy khimicheskiy analiz produktsii.) Tj
+T*
+(4.2 Takoy sostav kharakteren dlya polnogo RCA-paketa i pozvolyaet perekrestno proveryat) Tj
+T*
+(    rezhim raboty, kachestvo sredy i mekhaniko-elektricheskie mekhanizmy povrezhdeniya.) Tj
+T*
+(4.3 Nalichie godovogo vremennogo ryada po skvazhine ukazyvaet na neobkhodimost analiza trendov) Tj
+T*
+(degradatsii) Tj
+ET
+endstream
+endobj
+3 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+endobj
+4 0 obj
+<< /Length 3409 >>
+stream
+BT
+/F1 10 Tf
+42 810 Td
+13 TL
+(    i predavariynykh priznakov, a ne tolko edinichnogo sobytiya.) Tj
+T*
+() Tj
+T*
+(RAZDEL 5. GIPOTEZY PERVOPRIChINY \(RANZhIROVANIE\)) Tj
+T*
+(H1 \(prioritet\): degradatsiya skvazhinnoy sredy + rabota UETsN vne raschetnoy gidravliki.) Tj
+T*
+(  Tsepochka mekhanizma: izmenenie sredy \(gaz/voda/mekhprimesi/soli/emulsiya\) -> gidronesootvetstvie ->) Tj
+T*
+(  peregruzka stupeney / nestabilnaya podacha -> uskorennyy iznos vraschayuschikhsya i opornykh uzlov ->) Tj
+T*
+(otkaz.) Tj
+T*
+(H2: narusheniya energokachestva \(provaly napryazheniya, perekos faz, nestabilnaya rabota PCh\).) Tj
+T*
+(H3: nesootvetstvie podbora oborudovaniya ili ranniy proizvodstvennyy defekt pri rabote v dopustimom) Tj
+T*
+(rezhime.) Tj
+T*
+() Tj
+T*
+(RAZDEL 6. POZITsIYa ZASchITY PRAV EKSPLUATIRUYuSchEY ORGANIZATsII) Tj
+T*
+(Printsip: sam fakt otkaza NE yavlyaetsya dokazatelstvom narusheniya ekspluatatsii.) Tj
+T*
+(Trebuemaya prichinno-sledstvennaya dokazatelnaya tsepochka: deystvie personala -> izmerennoe narushenie) Tj
+T*
+(rezhima ->) Tj
+T*
+(sootvetstvuyuschiy mekhanizm fizicheskogo povrezhdeniya. Bez polnoy tsepochki vina ekspluatatsii ne) Tj
+T*
+(dokazana.) Tj
+T*
+(Deystviya zaschity v pretenzionnoy protsedure:) Tj
+T*
+(  A\) istrebovat telemetriyu i zhurnal sobytiy minimum za 72 chasa do otkaza;) Tj
+T*
+(  B\) sopostavit fakticheskiy rezhim s kartoy vyvoda i dopustimym oknom raboty;) Tj
+T*
+(  C\) naznachit nezavisimuyu defektatsiyu/razborku s fotofiksatsiey;) Tj
+T*
+(  D\) sravnit narabotku do otkaza s garantiynymi i normativnymi porogami;) Tj
+T*
+(  E\) osparivat vyvody formata 'raz otkaz -> znachit vina ekspluatatsii'.) Tj
+T*
+() Tj
+T*
+(RAZDEL 7. REKOMENDUEMYY ShABLON PROFESSIONALNOGO OTChETA) Tj
+T*
+(1\) Pasport obekta, sostav komissii, reestr iskhodnykh dannykh.) Tj
+T*
+(2\) Khronologiya sobytiy s tochnymi otmetkami vremeni i srabatyvaniyami zaschit.) Tj
+T*
+(3\) Analiz trendov \(I, U, Hz, T, P, Q\) v oknakh do/vo vremya/posle otkaza.) Tj
+T*
+(4\) Defektatsiya: uzly, klass povrezhdeniya, zamery, fotoprilozhenie.) Tj
+T*
+(5\) Korrelyatsiya khimii sredy i mekhprimesey s profilem iznosa.) Tj
+T*
+(6\) Matritsa sravneniya gipotez s urovnem dostovernosti.) Tj
+T*
+(7\) Finalnaya formulirovka pervoprichiny + CAPA \(korrektiruyuschie/preventivnye mery\).) Tj
+T*
+(8\) Raspredelenie otvetstvennosti i riskov s yavnymi ssylkami na dokazatelstva.) Tj
+T*
+() Tj
+T*
+(RAZDEL 8. PROGRAMMA PREVENTIVNYKh MEROPRIYaTIY) Tj
+T*
+(- usilit monitoring kachestva produktsii i porogi srabatyvaniya po otkloneniyam;) Tj
+T*
+(- vnedrit avtomaticheskie preduprezhdeniya po PCh/toku/temperature s predavariynoy analitikoy;) Tj
+T*
+(- regulyarno verifitsirovat podbor UETsN otnositelno fakticheskogo okna dobychi;) Tj
+T*
+(- zakrepit post-failure matritsu: nablyudaemoe povrezhdenie <-> veroyatnyy mekhanizm <-> dokazatelstvo.) Tj
+T*
+() Tj
+T*
+(RAZDEL 9. ITOGOVOE KONSOLIDIROVANNOE ZAKLYuChENIE) Tj
+T*
+(Po sovokupnosti vsekh faylov arkhiva naibolee veroyatna vneshnyaya po otnosheniyu k ekspluatatsii) Tj
+T*
+(priroda otkaza: vliyanie usloviy skvazhiny s vykhodom UETsN v neraschetnyy rezhim. Pri tekuschey glubine) Tj
+T*
+(dannykh) Tj
+T*
+(pryamaya dokazannaya vina ekspluatatsii ne ustanovlena. Finalnoe tekhniko-pravovoe zaklyuchenie trebuet) Tj
+T*
+(polnogo izvlecheniya soderzhaniya vnutrennikh dokumentov i strogoy perekrestnoy validatsii telemetrii,) Tj
+T*
+(rezultatov defektatsii i rezhimnykh ogranicheniy.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1092 >>
+stream
+BT
+/F1 10 Tf
+42 810 Td
+13 TL
+(PRILOZhENIE A. MAShINOChITAEMYE FAKTY) Tj
+T*
+(A01: block=1, offset=25, h_crc=344b9b99, method=3, dict_code=4, host_os=0, name_bytes=121) Tj
+T*
+(A02: block=2, offset=1366788, h_crc=32485967, method=3, dict_code=4, host_os=0, name_bytes=26) Tj
+T*
+(A03: block=3, offset=1818755, h_crc=f97772fa, method=3, dict_code=4, host_os=0, name_bytes=15) Tj
+T*
+(A04: block=4, offset=1827875, h_crc=87f4232b, method=3, dict_code=4, host_os=0, name_bytes=24) Tj
+T*
+(A05: block=5, offset=2073610, h_crc=78765a39, method=3, dict_code=4, host_os=0, name_bytes=101) Tj
+T*
+(A06: block=6, offset=2120472, h_crc=9b1edcfc, method=3, dict_code=4, host_os=0, name_bytes=73) Tj
+T*
+(A07: block=7, offset=2129368, h_crc=558dbb00, method=3, dict_code=4, host_os=0, name_bytes=73) Tj
+T*
+(A08: block=8, offset=3823490, h_crc=07e5db76, method=3, dict_code=4, host_os=0, name_bytes=19) Tj
+T*
+(A09: block=9, offset=4439087, h_crc=c36cde7e, method=3, dict_code=4, host_os=0, name_bytes=41) Tj
+T*
+(A10: block=10, offset=4501067, h_crc=e61a9de8, method=3, dict_code=4, host_os=0, name_bytes=35) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Pages /Kids [ 3 0 R 5 0 R 7 0 R ] /Count 3 >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000003412 00000 n 
+0000003538 00000 n 
+0000006999 00000 n 
+0000007125 00000 n 
+0000008269 00000 n 
+0000008395 00000 n 
+0000008466 00000 n 
+trailer
+<< /Size 10 /Root 9 0 R >>
+startxref
+8515
+%%EOF
