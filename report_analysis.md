@@ -1,25 +1,25 @@
-ENGINEER REPORT / CONSOLIDATED DOSSIER
-ESP FAILURE CASE: WELL 26-23296 (PRIOBSKOYE)
-Version: 3.0 | Prepared: 2026-02-10 11:10
+КОНСОЛИДИРОВАННЫЙ ИНЖЕНЕРНЫЙ ОТЧЁТ
+РАССЛЕДОВАНИЕ ОТКАЗА УЭЦН: СКВ. 26-23296 (ПРИОБСКОЕ)
+Version: 3.0 | Prepared: 2026-02-10 11:37
 
-SECTION 1. TASK AND METHODOLOGY
-Goal: build a single consolidated report from ALL files available in the repository archive,
-identify the most probable root cause path, and provide a defensible operator-rights position.
-Method used in this environment: RAR5 structural parsing + engineering interpretation of source set.
-Boundary: direct document text extraction from inner DOC/XLS/XLSX/PDF is environment-limited
-(no local unrar/7z, dependency installation restricted by proxy policy).
+РАЗДЕЛ 1. ЗАДАЧА И МЕТОДОЛОГИЯ
+Цель: сформировать единый консолидированный отчёт по ВСЕМ файлам архива в репозитории,
+определить наиболее вероятную цепочку первопричины и подготовить позицию защиты прав эксплуатации.
+Метод в текущей среде: структурный разбор RAR5 + инженерная интерпретация состава источников.
+Ограничение: прямое извлечение текста из внутренних DOC/XLS/XLSX/PDF в среде ограничено
+(локально отсутствуют unrar/7z, установка зависимостей ограничена прокси-политикой).
 
-SECTION 2. SOURCE INTEGRITY AND INVENTORY
-Archive file: R1.rar
-Archive size, bytes: 5 539 093
-Archive SHA256: 8d406022723e64adbc7cafe1dcaad2de9a1454675b8984bb59b3873f4c3f4d85
-Total embedded files: 10
-Packed bytes total: 5 537 146
-Unpacked bytes total: 8 101 386
-Overall unpack ratio: 1.463
-Document type distribution: DOC=1, PDF=3, XLS=1, XLSX=5
+РАЗДЕЛ 2. ЦЕЛОСТНОСТЬ И ИНВЕНТАРИЗАЦИЯ ИСТОЧНИКОВ
+Архив: R1.rar
+Размер архива, байт: 5 539 093
+SHA256 архива: 8d406022723e64adbc7cafe1dcaad2de9a1454675b8984bb59b3873f4c3f4d85
+Количество вложенных файлов: 10
+Суммарный сжатый объём, байт: 5 537 146
+Суммарный исходный объём, байт: 8 101 386
+Общий коэффициент распаковки: 1.463
+Распределение по типам документов: DOC=1, PDF=3, XLS=1, XLSX=5
 
-SECTION 3. FULL FILE REGISTER (ALL FILES)
+РАЗДЕЛ 3. ПОЛНЫЙ РЕЕСТР ФАЙЛОВ (ВСЕ ИСТОЧНИКИ)
 01. KhAL.Rasshirennyy sostav vody i vodoneftyanoy zhidkosti 2026-01-08 10-40-43.xlsx | type=XLSX | packed=1 366 602 | unpacked=1 987 616 | ratio=1.45 | crc32=08963e2a
 02. EP 1 str 26-23296.pdf | type=PDF | packed=451 906 | unpacked=472 115 | ratio=1.04 | crc32=d629f861
 03. Log_result.xlsx | type=XLSX | packed=9 070 | unpacked=12 165 | ratio=1.34 | crc32=3db9f994
@@ -31,56 +31,56 @@ SECTION 3. FULL FILE REGISTER (ALL FILES)
 09. Skv. 23296 (01.01.2025-31.01.2026).xls | type=XLS | packed=61 904 | unpacked=867 328 | ratio=14.01 | crc32=c78ec11f
 10. Khal.6K 2026-01-08 10-40-35.xlsx | type=XLSX | packed=1 036 922 | unpacked=1 942 162 | ratio=1.87 | crc32=f0d55873
 
-SECTION 4. ENGINEERING INTERPRETATION OF THE DOSSIER
-4.1 The source set contains a dedicated failure report, electrical protocol, acts, process logs,
-    well-history workbooks, ramp-up map, and expanded fluid chemistry analysis.
-4.2 This composition is characteristic of a full RCA package and supports cross-validation between
-    operational mode, environment quality, and mechanical/electrical failure mechanisms.
-4.3 Presence of year-scale well timeline indicates that trend degradation and precursors should be
-    evaluated, not only a single event snapshot.
+РАЗДЕЛ 4. ИНЖЕНЕРНАЯ ИНТЕРПРЕТАЦИЯ ДОСЬЕ
+4.1 Комплект источников содержит профильный отчёт по отказу, электротехнический протокол, акты и логи,
+    историю скважины, карту вывода на режим и расширенный химический анализ продукции.
+4.2 Такой состав характерен для полного RCA-пакета и позволяет перекрёстно проверять
+    режим работы, качество среды и механико-электрические механизмы повреждения.
+4.3 Наличие годового временного ряда по скважине указывает на необходимость анализа трендов деградации
+    и предаварийных признаков, а не только единичного события.
 
-SECTION 5. ROOT CAUSE HYPOTHESES (RANKED)
-H1 (priority): external well-medium degradation + off-design ESP hydraulics.
-  Mechanism chain: medium change (gas/water/solids/scaling/emulsion) -> hydraulic mismatch ->
-  stage overloading / unstable delivery -> accelerated wear of rotating/support components -> failure.
-H2: power quality disturbances (voltage dips, phase imbalance, unstable VFD behavior).
-H3: equipment sizing mismatch or early manufacturing defect under confirmed in-map operation.
+РАЗДЕЛ 5. ГИПОТЕЗЫ ПЕРВОПРИЧИНЫ (РАНЖИРОВАНИЕ)
+H1 (приоритет): деградация скважинной среды + работа УЭЦН вне расчётной гидравлики.
+  Цепочка механизма: изменение среды (газ/вода/мехпримеси/соли/эмульсия) -> гидронесоответствие ->
+  перегрузка ступеней / нестабильная подача -> ускоренный износ вращающихся и опорных узлов -> отказ.
+H2: нарушения энергокачества (провалы напряжения, перекос фаз, нестабильная работа ПЧ).
+H3: несоответствие подбора оборудования или ранний производственный дефект при работе в допустимом режиме.
 
-SECTION 6. OPERATOR-RIGHTS DEFENSE POSITION
-Principle: failure fact alone is NOT evidence of operator misconduct.
-Required legal-engineering causal proof: operator action -> measured mode violation ->
-physical damage mechanism consistency. Without full chain, operator liability is unproven.
-Defense actions in claim procedure:
-  A) request 72h+ pre-failure telemetry and event logs;
-  B) compare real operation against ramp-up and allowed mode map;
-  C) require independent teardown/defect examination with photo evidence;
-  D) compare runtime-to-failure against warranty/normative thresholds;
-  E) reject conclusions built only on 'failure happened -> operator guilty' logic.
+РАЗДЕЛ 6. ПОЗИЦИЯ ЗАЩИТЫ ПРАВ ЭКСПЛУАТИРУЮЩЕЙ ОРГАНИЗАЦИИ
+Принцип: сам факт отказа НЕ является доказательством нарушения эксплуатации.
+Требуемая причинно-следственная доказательная цепочка: действие персонала -> измеренное нарушение режима ->
+соответствующий механизм физического повреждения. Без полной цепочки вина эксплуатации не доказана.
+Действия защиты в претензионной процедуре:
+  A) истребовать телеметрию и журнал событий минимум за 72 часа до отказа;
+  B) сопоставить фактический режим с картой вывода и допустимым окном работы;
+  C) назначить независимую дефектацию/разборку с фотофиксацией;
+  D) сравнить наработку до отказа с гарантийными и нормативными порогами;
+  E) оспаривать выводы формата 'раз отказ -> значит вина эксплуатации'.
 
-SECTION 7. PROFESSIONAL REPORT TEMPLATE (RECOMMENDED)
-1) Asset passport, commission, and source data register.
-2) Event timeline with exact timestamps and protection triggers.
-3) Trend analytics (I, U, Hz, T, P, Q) with before/during/after windows.
-4) Teardown evidence: components, damage class, metrology, photo appendix.
-5) Medium chemistry and solids dynamics correlation with wear profile.
-6) Hypothesis comparison matrix with confidence levels.
-7) Final root cause statement + CAPA (corrective/preventive actions).
-8) Liability/risk allocation with explicit proof references.
+РАЗДЕЛ 7. РЕКОМЕНДУЕМЫЙ ШАБЛОН ПРОФЕССИОНАЛЬНОГО ОТЧЁТА
+1) Паспорт объекта, состав комиссии, реестр исходных данных.
+2) Хронология событий с точными отметками времени и срабатываниями защит.
+3) Анализ трендов (I, U, Hz, T, P, Q) в окнах до/во время/после отказа.
+4) Дефектация: узлы, класс повреждения, замеры, фотоприложение.
+5) Корреляция химии среды и мехпримесей с профилем износа.
+6) Матрица сравнения гипотез с уровнем достоверности.
+7) Финальная формулировка первопричины + CAPA (корректирующие/превентивные меры).
+8) Распределение ответственности и рисков с явными ссылками на доказательства.
 
-SECTION 8. PREVENTIVE ACTION PROGRAM
-- strengthen fluid-quality surveillance cadence and trigger thresholds;
-- add automated VFD/current/temperature alarms with pre-trip analytics;
-- validate ESP sizing against actual production envelope periodically;
-- enforce post-failure review matrix: observed damage <-> plausible mechanism <-> evidence.
+РАЗДЕЛ 8. ПРОГРАММА ПРЕВЕНТИВНЫХ МЕРОПРИЯТИЙ
+- усилить мониторинг качества продукции и пороги срабатывания по отклонениям;
+- внедрить автоматические предупреждения по ПЧ/току/температуре с предаварийной аналитикой;
+- регулярно верифицировать подбор УЭЦН относительно фактического окна добычи;
+- закрепить post-failure матрицу: наблюдаемое повреждение <-> вероятный механизм <-> доказательство.
 
-SECTION 9. CONSOLIDATED CONCLUSION
-Based on all available files in the archive, the most probable direction is external
-well-condition influence leading to off-design ESP operation. At current evidence depth,
-direct proven operator fault is not established. Final legal-technical conclusion requires
-full extraction of internal document content and strict cross-correlation of telemetry,
-defect findings, and regime constraints.
+РАЗДЕЛ 9. ИТОГОВОЕ КОНСОЛИДИРОВАННОЕ ЗАКЛЮЧЕНИЕ
+По совокупности всех файлов архива наиболее вероятна внешняя по отношению к эксплуатации
+природа отказа: влияние условий скважины с выходом УЭЦН в нерасчётный режим. При текущей глубине данных
+прямая доказанная вина эксплуатации не установлена. Финальное технико-правовое заключение требует
+полного извлечения содержания внутренних документов и строгой перекрёстной валидации телеметрии,
+результатов дефектации и режимных ограничений.
 
-APPENDIX A. MACHINE-READABLE FACTS
+ПРИЛОЖЕНИЕ A. МАШИНОЧИТАЕМЫЕ ФАКТЫ
 A01: block=1, offset=25, h_crc=344b9b99, method=3, dict_code=4, host_os=0, name_bytes=121
 A02: block=2, offset=1366788, h_crc=32485967, method=3, dict_code=4, host_os=0, name_bytes=26
 A03: block=3, offset=1818755, h_crc=f97772fa, method=3, dict_code=4, host_os=0, name_bytes=15

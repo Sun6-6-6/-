@@ -4,55 +4,57 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 3270 >>
+<< /Length 3275 >>
 stream
 BT
 /F1 10 Tf
 42 810 Td
 13 TL
-(ENGINEER REPORT / CONSOLIDATED DOSSIER) Tj
+(KONSOLIDIROVANNYY INZhENERNYY OTChET) Tj
 T*
-(ESP FAILURE CASE: WELL 26-23296 \(PRIOBSKOYE\)) Tj
+(RASSLEDOVANIE OTKAZA UETsN: SKV. 26-23296 \(PRIOBSKOE\)) Tj
 T*
-(Version: 3.0 | Prepared: 2026-02-10 11:10) Tj
-T*
-() Tj
-T*
-(SECTION 1. TASK AND METHODOLOGY) Tj
-T*
-(Goal: build a single consolidated report from ALL files available in the repository archive,) Tj
-T*
-(identify the most probable root cause path, and provide a defensible operator-rights position.) Tj
-T*
-(Method used in this environment: RAR5 structural parsing + engineering interpretation of source set.) Tj
-T*
-(Boundary: direct document text extraction from inner DOC/XLS/XLSX/PDF is environment-limited) Tj
-T*
-(\(no local unrar/7z, dependency installation restricted by proxy policy\).) Tj
+(Version: 3.0 | Prepared: 2026-02-10 11:37) Tj
 T*
 () Tj
 T*
-(SECTION 2. SOURCE INTEGRITY AND INVENTORY) Tj
+(RAZDEL 1. ZADAChA I METODOLOGIYa) Tj
 T*
-(Archive file: R1.rar) Tj
+(Tsel: sformirovat edinyy konsolidirovannyy otchet po VSEM faylam arkhiva v repozitorii,) Tj
 T*
-(Archive size, bytes: 5 539 093) Tj
+(opredelit naibolee veroyatnuyu tsepochku pervoprichiny i podgotovit pozitsiyu zaschity prav) Tj
 T*
-(Archive SHA256: 8d406022723e64adbc7cafe1dcaad2de9a1454675b8984bb59b3873f4c3f4d85) Tj
+(ekspluatatsii.) Tj
 T*
-(Total embedded files: 10) Tj
+(Metod v tekuschey srede: strukturnyy razbor RAR5 + inzhenernaya interpretatsiya sostava istochnikov.) Tj
 T*
-(Packed bytes total: 5 537 146) Tj
+(Ogranichenie: pryamoe izvlechenie teksta iz vnutrennikh DOC/XLS/XLSX/PDF v srede ogranicheno) Tj
 T*
-(Unpacked bytes total: 8 101 386) Tj
-T*
-(Overall unpack ratio: 1.463) Tj
-T*
-(Document type distribution: DOC=1, PDF=3, XLS=1, XLSX=5) Tj
+(\(lokalno otsutstvuyut unrar/7z, ustanovka zavisimostey ogranichena proksi-politikoy\).) Tj
 T*
 () Tj
 T*
-(SECTION 3. FULL FILE REGISTER \(ALL FILES\)) Tj
+(RAZDEL 2. TsELOSTNOST I INVENTARIZATsIYa ISTOChNIKOV) Tj
+T*
+(Arkhiv: R1.rar) Tj
+T*
+(Razmer arkhiva, bayt: 5 539 093) Tj
+T*
+(SHA256 arkhiva: 8d406022723e64adbc7cafe1dcaad2de9a1454675b8984bb59b3873f4c3f4d85) Tj
+T*
+(Kolichestvo vlozhennykh faylov: 10) Tj
+T*
+(Summarnyy szhatyy obem, bayt: 5 537 146) Tj
+T*
+(Summarnyy iskhodnyy obem, bayt: 8 101 386) Tj
+T*
+(Obschiy koeffitsient raspakovki: 1.463) Tj
+T*
+(Raspredelenie po tipam dokumentov: DOC=1, PDF=3, XLS=1, XLSX=5) Tj
+T*
+() Tj
+T*
+(RAZDEL 3. POLNYY REESTR FAYLOV \(VSE ISTOChNIKI\)) Tj
 T*
 (01. KhAL.Rasshirennyy sostav vody i vodoneftyanoy zhidkosti 2026-01-08 10-40-43.xlsx | type=XLSX |) Tj
 T*
@@ -88,23 +90,21 @@ T*
 T*
 () Tj
 T*
-(SECTION 4. ENGINEERING INTERPRETATION OF THE DOSSIER) Tj
+(RAZDEL 4. INZhENERNAYa INTERPRETATsIYa DOSE) Tj
 T*
-(4.1 The source set contains a dedicated failure report, electrical protocol, acts, process logs,) Tj
+(4.1 Komplekt istochnikov soderzhit profilnyy otchet po otkazu, elektrotekhnicheskiy protokol, akty i) Tj
 T*
-(    well-history workbooks, ramp-up map, and expanded fluid chemistry analysis.) Tj
+(logi,) Tj
 T*
-(4.2 This composition is characteristic of a full RCA package and supports cross-validation between) Tj
+(    istoriyu skvazhiny, kartu vyvoda na rezhim i rasshirennyy khimicheskiy analiz produktsii.) Tj
 T*
-(    operational mode, environment quality, and mechanical/electrical failure mechanisms.) Tj
+(4.2 Takoy sostav kharakteren dlya polnogo RCA-paketa i pozvolyaet perekrestno proveryat) Tj
 T*
-(4.3 Presence of year-scale well timeline indicates that trend degradation and precursors should be) Tj
+(    rezhim raboty, kachestvo sredy i mekhaniko-elektricheskie mekhanizmy povrezhdeniya.) Tj
 T*
-(    evaluated, not only a single event snapshot.) Tj
+(4.3 Nalichie godovogo vremennogo ryada po skvazhine ukazyvaet na neobkhodimost analiza trendov) Tj
 T*
-() Tj
-T*
-(SECTION 5. ROOT CAUSE HYPOTHESES \(RANKED\)) Tj
+(degradatsii) Tj
 ET
 endstream
 endobj
@@ -112,93 +112,121 @@ endobj
 << /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
 endobj
 4 0 obj
-<< /Length 3620 >>
+<< /Length 3409 >>
 stream
 BT
 /F1 10 Tf
 42 810 Td
 13 TL
-(H1 \(priority\): external well-medium degradation + off-design ESP hydraulics.) Tj
-T*
-(  Mechanism chain: medium change \(gas/water/solids/scaling/emulsion\) -> hydraulic mismatch ->) Tj
-T*
-(  stage overloading / unstable delivery -> accelerated wear of rotating/support components -> failure.) Tj
-T*
-(H2: power quality disturbances \(voltage dips, phase imbalance, unstable VFD behavior\).) Tj
-T*
-(H3: equipment sizing mismatch or early manufacturing defect under confirmed in-map operation.) Tj
+(    i predavariynykh priznakov, a ne tolko edinichnogo sobytiya.) Tj
 T*
 () Tj
 T*
-(SECTION 6. OPERATOR-RIGHTS DEFENSE POSITION) Tj
+(RAZDEL 5. GIPOTEZY PERVOPRIChINY \(RANZhIROVANIE\)) Tj
 T*
-(Principle: failure fact alone is NOT evidence of operator misconduct.) Tj
+(H1 \(prioritet\): degradatsiya skvazhinnoy sredy + rabota UETsN vne raschetnoy gidravliki.) Tj
 T*
-(Required legal-engineering causal proof: operator action -> measured mode violation ->) Tj
+(  Tsepochka mekhanizma: izmenenie sredy \(gaz/voda/mekhprimesi/soli/emulsiya\) -> gidronesootvetstvie ->) Tj
 T*
-(physical damage mechanism consistency. Without full chain, operator liability is unproven.) Tj
+(  peregruzka stupeney / nestabilnaya podacha -> uskorennyy iznos vraschayuschikhsya i opornykh uzlov ->) Tj
 T*
-(Defense actions in claim procedure:) Tj
+(otkaz.) Tj
 T*
-(  A\) request 72h+ pre-failure telemetry and event logs;) Tj
+(H2: narusheniya energokachestva \(provaly napryazheniya, perekos faz, nestabilnaya rabota PCh\).) Tj
 T*
-(  B\) compare real operation against ramp-up and allowed mode map;) Tj
+(H3: nesootvetstvie podbora oborudovaniya ili ranniy proizvodstvennyy defekt pri rabote v dopustimom) Tj
 T*
-(  C\) require independent teardown/defect examination with photo evidence;) Tj
-T*
-(  D\) compare runtime-to-failure against warranty/normative thresholds;) Tj
-T*
-(  E\) reject conclusions built only on 'failure happened -> operator guilty' logic.) Tj
+(rezhime.) Tj
 T*
 () Tj
 T*
-(SECTION 7. PROFESSIONAL REPORT TEMPLATE \(RECOMMENDED\)) Tj
+(RAZDEL 6. POZITsIYa ZASchITY PRAV EKSPLUATIRUYuSchEY ORGANIZATsII) Tj
 T*
-(1\) Asset passport, commission, and source data register.) Tj
+(Printsip: sam fakt otkaza NE yavlyaetsya dokazatelstvom narusheniya ekspluatatsii.) Tj
 T*
-(2\) Event timeline with exact timestamps and protection triggers.) Tj
+(Trebuemaya prichinno-sledstvennaya dokazatelnaya tsepochka: deystvie personala -> izmerennoe narushenie) Tj
 T*
-(3\) Trend analytics \(I, U, Hz, T, P, Q\) with before/during/after windows.) Tj
+(rezhima ->) Tj
 T*
-(4\) Teardown evidence: components, damage class, metrology, photo appendix.) Tj
+(sootvetstvuyuschiy mekhanizm fizicheskogo povrezhdeniya. Bez polnoy tsepochki vina ekspluatatsii ne) Tj
 T*
-(5\) Medium chemistry and solids dynamics correlation with wear profile.) Tj
+(dokazana.) Tj
 T*
-(6\) Hypothesis comparison matrix with confidence levels.) Tj
+(Deystviya zaschity v pretenzionnoy protsedure:) Tj
 T*
-(7\) Final root cause statement + CAPA \(corrective/preventive actions\).) Tj
+(  A\) istrebovat telemetriyu i zhurnal sobytiy minimum za 72 chasa do otkaza;) Tj
 T*
-(8\) Liability/risk allocation with explicit proof references.) Tj
+(  B\) sopostavit fakticheskiy rezhim s kartoy vyvoda i dopustimym oknom raboty;) Tj
 T*
-() Tj
+(  C\) naznachit nezavisimuyu defektatsiyu/razborku s fotofiksatsiey;) Tj
 T*
-(SECTION 8. PREVENTIVE ACTION PROGRAM) Tj
+(  D\) sravnit narabotku do otkaza s garantiynymi i normativnymi porogami;) Tj
 T*
-(- strengthen fluid-quality surveillance cadence and trigger thresholds;) Tj
-T*
-(- add automated VFD/current/temperature alarms with pre-trip analytics;) Tj
-T*
-(- validate ESP sizing against actual production envelope periodically;) Tj
-T*
-(- enforce post-failure review matrix: observed damage <-> plausible mechanism <-> evidence.) Tj
+(  E\) osparivat vyvody formata 'raz otkaz -> znachit vina ekspluatatsii'.) Tj
 T*
 () Tj
 T*
-(SECTION 9. CONSOLIDATED CONCLUSION) Tj
+(RAZDEL 7. REKOMENDUEMYY ShABLON PROFESSIONALNOGO OTChETA) Tj
 T*
-(Based on all available files in the archive, the most probable direction is external) Tj
+(1\) Pasport obekta, sostav komissii, reestr iskhodnykh dannykh.) Tj
 T*
-(well-condition influence leading to off-design ESP operation. At current evidence depth,) Tj
+(2\) Khronologiya sobytiy s tochnymi otmetkami vremeni i srabatyvaniyami zaschit.) Tj
 T*
-(direct proven operator fault is not established. Final legal-technical conclusion requires) Tj
+(3\) Analiz trendov \(I, U, Hz, T, P, Q\) v oknakh do/vo vremya/posle otkaza.) Tj
 T*
-(full extraction of internal document content and strict cross-correlation of telemetry,) Tj
+(4\) Defektatsiya: uzly, klass povrezhdeniya, zamery, fotoprilozhenie.) Tj
 T*
-(defect findings, and regime constraints.) Tj
+(5\) Korrelyatsiya khimii sredy i mekhprimesey s profilem iznosa.) Tj
+T*
+(6\) Matritsa sravneniya gipotez s urovnem dostovernosti.) Tj
+T*
+(7\) Finalnaya formulirovka pervoprichiny + CAPA \(korrektiruyuschie/preventivnye mery\).) Tj
+T*
+(8\) Raspredelenie otvetstvennosti i riskov s yavnymi ssylkami na dokazatelstva.) Tj
 T*
 () Tj
 T*
-(APPENDIX A. MACHINE-READABLE FACTS) Tj
+(RAZDEL 8. PROGRAMMA PREVENTIVNYKh MEROPRIYaTIY) Tj
+T*
+(- usilit monitoring kachestva produktsii i porogi srabatyvaniya po otkloneniyam;) Tj
+T*
+(- vnedrit avtomaticheskie preduprezhdeniya po PCh/toku/temperature s predavariynoy analitikoy;) Tj
+T*
+(- regulyarno verifitsirovat podbor UETsN otnositelno fakticheskogo okna dobychi;) Tj
+T*
+(- zakrepit post-failure matritsu: nablyudaemoe povrezhdenie <-> veroyatnyy mekhanizm <-> dokazatelstvo.) Tj
+T*
+() Tj
+T*
+(RAZDEL 9. ITOGOVOE KONSOLIDIROVANNOE ZAKLYuChENIE) Tj
+T*
+(Po sovokupnosti vsekh faylov arkhiva naibolee veroyatna vneshnyaya po otnosheniyu k ekspluatatsii) Tj
+T*
+(priroda otkaza: vliyanie usloviy skvazhiny s vykhodom UETsN v neraschetnyy rezhim. Pri tekuschey glubine) Tj
+T*
+(dannykh) Tj
+T*
+(pryamaya dokazannaya vina ekspluatatsii ne ustanovlena. Finalnoe tekhniko-pravovoe zaklyuchenie trebuet) Tj
+T*
+(polnogo izvlecheniya soderzhaniya vnutrennikh dokumentov i strogoy perekrestnoy validatsii telemetrii,) Tj
+T*
+(rezultatov defektatsii i rezhimnykh ogranicheniy.) Tj
+T*
+() Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 1092 >>
+stream
+BT
+/F1 10 Tf
+42 810 Td
+13 TL
+(PRILOZhENIE A. MAShINOChITAEMYE FAKTY) Tj
 T*
 (A01: block=1, offset=25, h_crc=344b9b99, method=3, dict_code=4, host_os=0, name_bytes=121) Tj
 T*
@@ -213,19 +241,7 @@ T*
 (A06: block=6, offset=2120472, h_crc=9b1edcfc, method=3, dict_code=4, host_os=0, name_bytes=73) Tj
 T*
 (A07: block=7, offset=2129368, h_crc=558dbb00, method=3, dict_code=4, host_os=0, name_bytes=73) Tj
-ET
-endstream
-endobj
-5 0 obj
-<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
-endobj
-6 0 obj
-<< /Length 335 >>
-stream
-BT
-/F1 10 Tf
-42 810 Td
-13 TL
+T*
 (A08: block=8, offset=3823490, h_crc=07e5db76, method=3, dict_code=4, host_os=0, name_bytes=19) Tj
 T*
 (A09: block=9, offset=4439087, h_crc=c36cde7e, method=3, dict_code=4, host_os=0, name_bytes=41) Tj
@@ -248,15 +264,15 @@ xref
 0000000000 65535 f 
 0000000015 00000 n 
 0000000085 00000 n 
-0000003407 00000 n 
-0000003533 00000 n 
-0000007205 00000 n 
-0000007331 00000 n 
-0000007717 00000 n 
-0000007843 00000 n 
-0000007914 00000 n 
+0000003412 00000 n 
+0000003538 00000 n 
+0000006999 00000 n 
+0000007125 00000 n 
+0000008269 00000 n 
+0000008395 00000 n 
+0000008466 00000 n 
 trailer
 << /Size 10 /Root 9 0 R >>
 startxref
-7963
+8515
 %%EOF
