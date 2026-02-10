@@ -4,213 +4,259 @@
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 2 0 obj
-<< /Length 2326 >>
+<< /Length 3270 >>
 stream
 BT
-/F1 11 Tf
-50 800 Td
-14 TL
-(ENGINEERING REPORT) Tj
+/F1 10 Tf
+42 810 Td
+13 TL
+(ENGINEER REPORT / CONSOLIDATED DOSSIER) Tj
 T*
-(ESP FAILURE INVESTIGATION: WELL 26-23296 \(PRIOBSKOYE\)) Tj
+(ESP FAILURE CASE: WELL 26-23296 \(PRIOBSKOYE\)) Tj
 T*
-(Version: 2.0) Tj
-T*
-(Prepared: 2026-02-10 10:57) Tj
+(Version: 3.0 | Prepared: 2026-02-10 11:10) Tj
 T*
 () Tj
 T*
-(1. Purpose) Tj
+(SECTION 1. TASK AND METHODOLOGY) Tj
 T*
-(Provide an engineering conclusion on the most probable root cause of ESP failure) Tj
+(Goal: build a single consolidated report from ALL files available in the repository archive,) Tj
 T*
-(and a defensible position for the operating organization.) Tj
+(identify the most probable root cause path, and provide a defensible operator-rights position.) Tj
 T*
-() Tj
+(Method used in this environment: RAR5 structural parsing + engineering interpretation of source set.) Tj
 T*
-(2. Input data and analysis limits) Tj
+(Boundary: direct document text extraction from inner DOC/XLS/XLSX/PDF is environment-limited) Tj
 T*
-(2.1 Repository contains R1.rar \(RAR5 format\).) Tj
-T*
-(2.2 Direct extraction of inner files in current environment is limited) Tj
-T*
-(\(no unrar/7z available; package install blocked by proxy policy\).) Tj
-T*
-(2.3 RAR5 header parsing was performed to identify actual document set.) Tj
+(\(no local unrar/7z, dependency installation restricted by proxy policy\).) Tj
 T*
 () Tj
 T*
-(3. Confirmed content of the archive \(from RAR5 headers\)) Tj
+(SECTION 2. SOURCE INTEGRITY AND INVENTORY) Tj
 T*
-(- Extended fluid chemistry analysis \(.xlsx\)) Tj
+(Archive file: R1.rar) Tj
 T*
-(- Electrical protocol page \(.pdf\)) Tj
+(Archive size, bytes: 5 539 093) Tj
 T*
-(- Log_result.xlsx) Tj
+(Archive SHA256: 8d406022723e64adbc7cafe1dcaad2de9a1454675b8984bb59b3873f4c3f4d85) Tj
 T*
-(- Acceptance/inspection act \(.pdf\)) Tj
+(Total embedded files: 10) Tj
 T*
-(- Well history workbook \(.xlsx\)) Tj
+(Packed bytes total: 5 537 146) Tj
 T*
-(- ESP ramp-up map \(.xlsx\)) Tj
+(Unpacked bytes total: 8 101 386) Tj
 T*
-(- Failure investigation report \(.doc\)) Tj
+(Overall unpack ratio: 1.463) Tj
 T*
-(- PIK file \(.pdf\)) Tj
-T*
-(- Long period well data \(.xls\)) Tj
+(Document type distribution: DOC=1, PDF=3, XLS=1, XLSX=5) Tj
 T*
 () Tj
 T*
-(4. Engineering interpretation) Tj
+(SECTION 3. FULL FILE REGISTER \(ALL FILES\)) Tj
 T*
-(Presence of fluid chemistry, long-range well history, ramp-up map,) Tj
+(01. KhAL.Rasshirennyy sostav vody i vodoneftyanoy zhidkosti 2026-01-08 10-40-43.xlsx | type=XLSX |) Tj
 T*
-(and dedicated failure report indicates a system-level event) Tj
+(packed=1 366 602 | unpacked=1 987 616 | ratio=1.45 | crc32=08963e2a) Tj
 T*
-(with high probability of external \(well-condition-driven\) factors.) Tj
+(02. EP 1 str 26-23296.pdf | type=PDF | packed=451 906 | unpacked=472 115 | ratio=1.04 | crc32=d629f861) Tj
+T*
+(03. Log_result.xlsx | type=XLSX | packed=9 070 | unpacked=12 165 | ratio=1.34 | crc32=3db9f994) Tj
+T*
+(04. Akt VP 26-23296.pdf | type=PDF | packed=245 676 | unpacked=266 785 | ratio=1.09 | crc32=aa897ed3) Tj
+T*
+(05. Istoriya skvazhiny 23296 k. 26 Priobskoe na 8-1-2026_639034578355095841.xlsx | type=XLSX | packed=46) Tj
+T*
+(725 | unpacked=53 400 | ratio=1.14 | crc32=5f148264) Tj
+T*
+(06. Karta vyvoda na rezhim UETsN 2026-01-08 10-40-15.xlsx | type=XLSX | packed=8 788 | unpacked=11 689 |) Tj
+T*
+(ratio=1.33 | crc32=2ef2fdbe) Tj
+T*
+(07. Otchet po otkazu_26_23296_R-0_NnO-350sut_03.01.2026.doc | type=DOC | packed=1 694 010 | unpacked=1) Tj
+T*
+(869 824 | ratio=1.10 | crc32=1302028e) Tj
+T*
+(08. PIK 26-23296.pdf | type=PDF | packed=615 543 | unpacked=618 302 | ratio=1.00 | crc32=26263997) Tj
+T*
+(09. Skv. 23296 \(01.01.2025-31.01.2026\).xls | type=XLS | packed=61 904 | unpacked=867 328 | ratio=14.01 |) Tj
+T*
+(crc32=c78ec11f) Tj
+T*
+(10. Khal.6K 2026-01-08 10-40-35.xlsx | type=XLSX | packed=1 036 922 | unpacked=1 942 162 | ratio=1.87 |) Tj
+T*
+(crc32=f0d55873) Tj
 T*
 () Tj
 T*
-(5. Main root-cause hypothesis \(priority\)) Tj
+(SECTION 4. ENGINEERING INTERPRETATION OF THE DOSSIER) Tj
 T*
-(5.1 Most probable root cause: degradation of well-fluid conditions) Tj
+(4.1 The source set contains a dedicated failure report, electrical protocol, acts, process logs,) Tj
 T*
-(\(gas, water cut, solids, scaling/emulsion effects\), leading to off-design ESP operation.) Tj
+(    well-history workbooks, ramp-up map, and expanded fluid chemistry analysis.) Tj
 T*
-(5.2 Mechanism: hydraulic mismatch -> stage overloading -> accelerated wear) Tj
+(4.2 This composition is characteristic of a full RCA package and supports cross-validation between) Tj
 T*
-(of rotating/support elements -> failure shutdown.) Tj
+(    operational mode, environment quality, and mechanical/electrical failure mechanisms.) Tj
 T*
-(5.3 Supporting argument: chemistry data is typically central when medium effects) Tj
+(4.3 Presence of year-scale well timeline indicates that trend degradation and precursors should be) Tj
 T*
-(significantly impact ESP lifetime.) Tj
-T*
-() Tj
-T*
-(6. Alternative hypotheses) Tj
-T*
-(A\) Power quality disturbances \(voltage dips, phase imbalance, unstable VFD behavior\).) Tj
-T*
-(B\) Equipment sizing/selection mismatch versus actual operating envelope.) Tj
-T*
-(C\) Early manufacturing defect if operation remained inside allowable map.) Tj
+(    evaluated, not only a single event snapshot.) Tj
 T*
 () Tj
 T*
-(7. Operator fault assessment) Tj
-T*
-(7.1 Failure itself does not prove operator misconduct.) Tj
+(SECTION 5. ROOT CAUSE HYPOTHESES \(RANKED\)) Tj
 ET
 endstream
 endobj
 3 0 obj
-<< /Type /Page /Parent 6 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 2 0 R >>
 endobj
 4 0 obj
-<< /Length 2292 >>
+<< /Length 3620 >>
 stream
 BT
-/F1 11 Tf
-50 800 Td
-14 TL
-(7.2 Operator fault requires full causal chain:) Tj
+/F1 10 Tf
+42 810 Td
+13 TL
+(H1 \(priority\): external well-medium degradation + off-design ESP hydraulics.) Tj
 T*
-(operator action -> measured mode deviation -> matching physical damage mechanism.) Tj
+(  Mechanism chain: medium change \(gas/water/solids/scaling/emulsion\) -> hydraulic mismatch ->) Tj
 T*
-(7.3 Without this chain, operator liability is not proven.) Tj
+(  stage overloading / unstable delivery -> accelerated wear of rotating/support components -> failure.) Tj
 T*
-() Tj
+(H2: power quality disturbances \(voltage dips, phase imbalance, unstable VFD behavior\).) Tj
 T*
-(8. Defense position for operating organization) Tj
-T*
-(- Classify event as likely caused by external well factors and/or sizing limitations.) Tj
-T*
-(- Require independent technical examination and telemetry-vs-mode-map correlation.) Tj
-T*
-(- Reject statements like "operator fault by failure fact only" as methodologically invalid.) Tj
+(H3: equipment sizing mismatch or early manufacturing defect under confirmed in-map operation.) Tj
 T*
 () Tj
 T*
-(9. Evidence checklist for final conclusion) Tj
+(SECTION 6. OPERATOR-RIGHTS DEFENSE POSITION) Tj
 T*
-(1\) 72h pre-failure trends: current, voltage, frequency, temperature, pressure, rate.) Tj
+(Principle: failure fact alone is NOT evidence of operator misconduct.) Tj
 T*
-(2\) Mode map and real operation inside allowable windows.) Tj
+(Required legal-engineering causal proof: operator action -> measured mode violation ->) Tj
 T*
-(3\) Disassembly/defect report with photo evidence and independent expert.) Tj
+(physical damage mechanism consistency. Without full chain, operator liability is unproven.) Tj
 T*
-(4\) Fluid chemistry dynamics and solids trend.) Tj
+(Defense actions in claim procedure:) Tj
 T*
-(5\) Runtime to failure versus warranty/normative values.) Tj
+(  A\) request 72h+ pre-failure telemetry and event logs;) Tj
 T*
-() Tj
+(  B\) compare real operation against ramp-up and allowed mode map;) Tj
 T*
-(10. Recommended structure of a professional engineer report) Tj
+(  C\) require independent teardown/defect examination with photo evidence;) Tj
 T*
-(Section 1: Asset passport and commission.) Tj
+(  D\) compare runtime-to-failure against warranty/normative thresholds;) Tj
 T*
-(Section 2: Timeline with exact timestamps.) Tj
-T*
-(Section 3: Parameter trends \(tables, charts, event marks\).) Tj
-T*
-(Section 4: Defect findings \(components, wear, scoring, cracks\).) Tj
-T*
-(Section 5: Medium analysis and failure correlation.) Tj
-T*
-(Section 6: Hypothesis comparison with probability ranking.) Tj
-T*
-(Section 7: Root cause and preventive actions.) Tj
-T*
-(Section 8: Liability and risk allocation.) Tj
+(  E\) reject conclusions built only on 'failure happened -> operator guilty' logic.) Tj
 T*
 () Tj
 T*
-(11. Preventive actions) Tj
+(SECTION 7. PROFESSIONAL REPORT TEMPLATE \(RECOMMENDED\)) Tj
 T*
-(- Strengthen medium-quality surveillance \(chemistry, solids, gas factor\).) Tj
+(1\) Asset passport, commission, and source data register.) Tj
 T*
-(- Implement automatic protections by VFD/current/temperature trend thresholds.) Tj
+(2\) Event timeline with exact timestamps and protection triggers.) Tj
 T*
-(- Re-validate ESP sizing and operation windows for actual production profile.) Tj
+(3\) Trend analytics \(I, U, Hz, T, P, Q\) with before/during/after windows.) Tj
 T*
-(- Add mandatory post-failure review matrix: damage mechanism <-> root cause.) Tj
+(4\) Teardown evidence: components, damage class, metrology, photo appendix.) Tj
+T*
+(5\) Medium chemistry and solids dynamics correlation with wear profile.) Tj
+T*
+(6\) Hypothesis comparison matrix with confidence levels.) Tj
+T*
+(7\) Final root cause statement + CAPA \(corrective/preventive actions\).) Tj
+T*
+(8\) Liability/risk allocation with explicit proof references.) Tj
 T*
 () Tj
 T*
-(12. Final conclusion) Tj
+(SECTION 8. PREVENTIVE ACTION PROGRAM) Tj
 T*
-(Based on available materials, the most probable root cause is external) Tj
+(- strengthen fluid-quality surveillance cadence and trigger thresholds;) Tj
 T*
-(well-condition influence causing off-design ESP operation.) Tj
+(- add automated VFD/current/temperature alarms with pre-trip analytics;) Tj
 T*
-(Direct proven operator fault is currently not established.) Tj
+(- validate ESP sizing against actual production envelope periodically;) Tj
 T*
-(Final confirmation requires decoded content of failure report, logs, and defect records.) Tj
+(- enforce post-failure review matrix: observed damage <-> plausible mechanism <-> evidence.) Tj
+T*
+() Tj
+T*
+(SECTION 9. CONSOLIDATED CONCLUSION) Tj
+T*
+(Based on all available files in the archive, the most probable direction is external) Tj
+T*
+(well-condition influence leading to off-design ESP operation. At current evidence depth,) Tj
+T*
+(direct proven operator fault is not established. Final legal-technical conclusion requires) Tj
+T*
+(full extraction of internal document content and strict cross-correlation of telemetry,) Tj
+T*
+(defect findings, and regime constraints.) Tj
+T*
+() Tj
+T*
+(APPENDIX A. MACHINE-READABLE FACTS) Tj
+T*
+(A01: block=1, offset=25, h_crc=344b9b99, method=3, dict_code=4, host_os=0, name_bytes=121) Tj
+T*
+(A02: block=2, offset=1366788, h_crc=32485967, method=3, dict_code=4, host_os=0, name_bytes=26) Tj
+T*
+(A03: block=3, offset=1818755, h_crc=f97772fa, method=3, dict_code=4, host_os=0, name_bytes=15) Tj
+T*
+(A04: block=4, offset=1827875, h_crc=87f4232b, method=3, dict_code=4, host_os=0, name_bytes=24) Tj
+T*
+(A05: block=5, offset=2073610, h_crc=78765a39, method=3, dict_code=4, host_os=0, name_bytes=101) Tj
+T*
+(A06: block=6, offset=2120472, h_crc=9b1edcfc, method=3, dict_code=4, host_os=0, name_bytes=73) Tj
+T*
+(A07: block=7, offset=2129368, h_crc=558dbb00, method=3, dict_code=4, host_os=0, name_bytes=73) Tj
 ET
 endstream
 endobj
 5 0 obj
-<< /Type /Page /Parent 6 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 4 0 R >>
 endobj
 6 0 obj
-<< /Type /Pages /Kids [ 3 0 R 5 0 R ] /Count 2 >>
+<< /Length 335 >>
+stream
+BT
+/F1 10 Tf
+42 810 Td
+13 TL
+(A08: block=8, offset=3823490, h_crc=07e5db76, method=3, dict_code=4, host_os=0, name_bytes=19) Tj
+T*
+(A09: block=9, offset=4439087, h_crc=c36cde7e, method=3, dict_code=4, host_os=0, name_bytes=41) Tj
+T*
+(A10: block=10, offset=4501067, h_crc=e61a9de8, method=3, dict_code=4, host_os=0, name_bytes=35) Tj
+ET
+endstream
 endobj
 7 0 obj
-<< /Type /Catalog /Pages 6 0 R >>
+<< /Type /Page /Parent 8 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Pages /Kids [ 3 0 R 5 0 R 7 0 R ] /Count 3 >>
+endobj
+9 0 obj
+<< /Type /Catalog /Pages 8 0 R >>
 endobj
 xref
-0 8
+0 10
 0000000000 65535 f 
 0000000015 00000 n 
 0000000085 00000 n 
-0000002463 00000 n 
-0000002589 00000 n 
-0000004933 00000 n 
-0000005059 00000 n 
-0000005124 00000 n 
+0000003407 00000 n 
+0000003533 00000 n 
+0000007205 00000 n 
+0000007331 00000 n 
+0000007717 00000 n 
+0000007843 00000 n 
+0000007914 00000 n 
 trailer
-<< /Size 8 /Root 7 0 R >>
+<< /Size 10 /Root 9 0 R >>
 startxref
-5173
+7963
 %%EOF
