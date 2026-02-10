@@ -3,95 +3,93 @@ import textwrap
 
 OUT = 'engineer_report_uecn.pdf'
 
+# NOTE:
+# This PDF generator intentionally uses ASCII-only text to ensure stable rendering
+# in GitHub/browser PDF previews without embedding external Unicode fonts.
 report_text = f"""
-ИНЖЕНЕРНЫЙ ОТЧЕТ
-Расследование отказа УЭЦН по скв. 26-23296 (Приобское)
-Версия: 1.0
-Дата подготовки: {datetime.now().strftime('%Y-%m-%d %H:%M')}
+ENGINEERING REPORT
+ESP FAILURE INVESTIGATION: WELL 26-23296 (PRIOBSKOYE)
+Version: 2.0
+Prepared: {datetime.now().strftime('%Y-%m-%d %H:%M')}
 
-1. Цель отчета
-Подготовить инженерно-техническое заключение о наиболее вероятной первопричине отказа УЭЦН,
-а также обоснованную позицию защиты эксплуатирующей организации на основе доступных материалов дела.
+1. Purpose
+Provide an engineering conclusion on the most probable root cause of ESP failure
+and a defensible position for the operating organization.
 
-2. Исходные данные и границы анализа
-2.1. В репозитории доступен архив R1.rar (формат RAR5).
-2.2. Прямой доступ к содержимому файлов внутри архива в данной среде ограничен
-(отсутствуют unrar/7z, установка зависимостей заблокирована политикой прокси).
-2.3. Проведен инженерный парсинг заголовков RAR5 и установлен фактический состав пакета материалов.
+2. Input data and analysis limits
+2.1 Repository contains R1.rar (RAR5 format).
+2.2 Direct extraction of inner files in current environment is limited
+(no unrar/7z available; package install blocked by proxy policy).
+2.3 RAR5 header parsing was performed to identify actual document set.
 
-3. Состав материалов, подтвержденный анализом заголовков RAR5
-- ХАЛ.Расширенный состав воды и водонефтяной жидкости 2026-01-08 10-40-43.xlsx
-- ЭП 1 стр 26-23296.pdf
+3. Confirmed content of the archive (from RAR5 headers)
+- Extended fluid chemistry analysis (.xlsx)
+- Electrical protocol page (.pdf)
 - Log_result.xlsx
-- Акт ВП 26-23296.pdf
-- История скважины 23296 к. 26 Приобское на 8-1-2026_639034578355095841.xlsx
-- Карта вывода на режим УЭЦН 2026-01-08 10-40-15.xlsx
-- Отчет по отказу_26_23296_R-0_НнО-350сут_03.01.2026.doc
-- ПИК 26-23296.pdf
-- Скв. 23296 (01.01.2025-31.01.2026).xls
+- Acceptance/inspection act (.pdf)
+- Well history workbook (.xlsx)
+- ESP ramp-up map (.xlsx)
+- Failure investigation report (.doc)
+- PIK file (.pdf)
+- Long period well data (.xls)
 
-4. Инженерная интерпретация комплекта документов
-Наличие одновременно:
-(а) расширенного химического анализа,
-(б) истории скважины и годового тренда,
-(в) карты вывода на режим,
-(г) профильного отчета по отказу,
-указывает на комплексную природу события и высокую вероятность внешних по отношению к эксплуатации факторов.
+4. Engineering interpretation
+Presence of fluid chemistry, long-range well history, ramp-up map,
+and dedicated failure report indicates a system-level event
+with high probability of external (well-condition-driven) factors.
 
-5. Основная гипотеза первопричины (инженерная)
-5.1. Наиболее вероятная первопричина: ухудшение скважинной среды
-(газосодержание, обводненность, мехпримеси, солеобразование/эмульсия)
-с последующим выходом насосного агрегата в нерасчетные гидродинамические режимы.
-5.2. Механизм: рост сопротивления/потери подачи -> локальные перегрузки ступеней -> ускоренный износ
-подшипниково-опорных узлов/рабочих органов -> аварийный отказ.
-5.3. Признак в пользу гипотезы: при расследовании отказов к химанализу обычно обращаются,
-когда фактор среды существенно влияет на ресурс УЭЦН.
+5. Main root-cause hypothesis (priority)
+5.1 Most probable root cause: degradation of well-fluid conditions
+(gas, water cut, solids, scaling/emulsion effects), leading to off-design ESP operation.
+5.2 Mechanism: hydraulic mismatch -> stage overloading -> accelerated wear
+of rotating/support elements -> failure shutdown.
+5.3 Supporting argument: chemistry data is typically central when medium effects
+significantly impact ESP lifetime.
 
-6. Альтернативные гипотезы (в порядке убывания вероятности)
-A) Энергокачество: провалы напряжения, перекос фаз, неустойчивая частота ПЧ.
-B) Неполное соответствие подбора УЭЦН фактическим условиям эксплуатации.
-C) Ранний производственный дефект узла при подтвержденном соблюдении режима.
+6. Alternative hypotheses
+A) Power quality disturbances (voltage dips, phase imbalance, unstable VFD behavior).
+B) Equipment sizing/selection mismatch versus actual operating envelope.
+C) Early manufacturing defect if operation remained inside allowable map.
 
-7. Оценка вины эксплуатации
-7.1. Сам факт отказа не доказывает нарушения эксплуатации.
-7.2. Для вывода о вине требуется строгая причинно-следственная цепочка:
-конкретное действие персонала -> зарегистрированное отклонение режима -> наблюдаемый механизм повреждения.
-7.3. При отсутствии такой цепочки ответственность эксплуатирующей организации считается недоказанной.
+7. Operator fault assessment
+7.1 Failure itself does not prove operator misconduct.
+7.2 Operator fault requires full causal chain:
+operator action -> measured mode deviation -> matching physical damage mechanism.
+7.3 Without this chain, operator liability is not proven.
 
-8. Позиция защиты эксплуатирующей организации
-- Квалифицировать отказ как событие, вероятно обусловленное внешними факторами скважинной среды
-  и/или ограничениями подбора оборудования под фактические условия.
-- Требовать независимую техническую экспертизу и сопоставление телеметрии с режимной картой.
-- Оспаривать формулировки типа "вина эксплуатации по факту отказа" как методически неверные.
+8. Defense position for operating organization
+- Classify event as likely caused by external well factors and/or sizing limitations.
+- Require independent technical examination and telemetry-vs-mode-map correlation.
+- Reject statements like "operator fault by failure fact only" as methodologically invalid.
 
-9. Чек-лист доказательств для окончательного заключения
-1) Тренды за 72 часа до отказа: ток, напряжение, частота, температура, давление, дебит.
-2) Карта режима и фактическая работа в допустимых окнах.
-3) Дефектация с фотофиксацией и независимым экспертом.
-4) Динамика химсостава и мехпримесей.
-5) Наработка до отказа vs гарантийные/нормативные показатели.
+9. Evidence checklist for final conclusion
+1) 72h pre-failure trends: current, voltage, frequency, temperature, pressure, rate.
+2) Mode map and real operation inside allowable windows.
+3) Disassembly/defect report with photo evidence and independent expert.
+4) Fluid chemistry dynamics and solids trend.
+5) Runtime to failure versus warranty/normative values.
 
-10. Рекомендуемый формат "настоящего инженерного отчета"
-Раздел 1: Паспорт объекта и состав комиссии.
-Раздел 2: Хронология событий с точными timestamp.
-Раздел 3: Тренды параметров (таблицы + графики + событийные метки).
-Раздел 4: Результаты дефектации (узлы, фото, износ, трещины, задиры).
-Раздел 5: Анализ среды и корреляция с отказом.
-Раздел 6: Сравнение альтернативных гипотез с ранжированием вероятности.
-Раздел 7: Вывод о первопричине и предотвращающие мероприятия.
-Раздел 8: Правовая часть (ответственность, распределение рисков, перечень недостающих данных).
+10. Recommended structure of a professional engineer report
+Section 1: Asset passport and commission.
+Section 2: Timeline with exact timestamps.
+Section 3: Parameter trends (tables, charts, event marks).
+Section 4: Defect findings (components, wear, scoring, cracks).
+Section 5: Medium analysis and failure correlation.
+Section 6: Hypothesis comparison with probability ranking.
+Section 7: Root cause and preventive actions.
+Section 8: Liability and risk allocation.
 
-11. Рекомендуемые мероприятия предупреждения повторных отказов
-- Усилить контроль качества среды (оперативная химия, мехпримеси, газовый фактор).
-- Внедрить автоматические пороги защиты по трендам ПЧ/тока/температуры.
-- Пересмотреть подбор ступеней/частотных режимов под фактические дебиты.
-- Ввести обязательный post-failure review с матрицей "механизм повреждения <-> причина".
+11. Preventive actions
+- Strengthen medium-quality surveillance (chemistry, solids, gas factor).
+- Implement automatic protections by VFD/current/temperature trend thresholds.
+- Re-validate ESP sizing and operation windows for actual production profile.
+- Add mandatory post-failure review matrix: damage mechanism <-> root cause.
 
-12. Итоговое заключение
-По доступным материалам наиболее вероятной первопричиной отказа является воздействие
-внешних скважинных факторов с переходом УЭЦН в нерасчетные режимы. На текущем объеме данных
-прямая доказанная вина эксплуатации отсутствует. Окончательное заключение должно быть подтверждено
-расшифровкой содержимого профильного отчета по отказу, логов и дефектации.
+12. Final conclusion
+Based on available materials, the most probable root cause is external
+well-condition influence causing off-design ESP operation.
+Direct proven operator fault is currently not established.
+Final confirmation requires decoded content of failure report, logs, and defect records.
 """.strip("\n")
 
 
@@ -123,8 +121,6 @@ def add_obj(content: bytes):
 font_obj = add_obj(b"<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>")
 
 page_obj_ids = []
-content_obj_ids = []
-
 for page_lines in pages:
     stream_lines = ["BT", "/F1 11 Tf", "50 800 Td", "14 TL"]
     first = True
@@ -140,7 +136,6 @@ for page_lines in pages:
     stream = "\n".join(stream_lines).encode("latin-1", errors="replace")
     content = b"<< /Length " + str(len(stream)).encode() + b" >>\nstream\n" + stream + b"\nendstream"
     content_id = add_obj(content)
-    content_obj_ids.append(content_id)
     page_dict = (f"<< /Type /Page /Parent 0 0 R /MediaBox [0 0 595 842] "
                  f"/Resources << /Font << /F1 {font_obj} 0 R >> >> /Contents {content_id} 0 R >>").encode()
     page_id = add_obj(page_dict)
@@ -149,9 +144,8 @@ for page_lines in pages:
 kids = " ".join(f"{pid} 0 R" for pid in page_obj_ids)
 pages_obj = add_obj(f"<< /Type /Pages /Kids [ {kids} ] /Count {len(page_obj_ids)} >>".encode())
 
-# Patch parent refs
 for pid in page_obj_ids:
-    objects[pid-1] = objects[pid-1].replace(b"/Parent 0 0 R", f"/Parent {pages_obj} 0 R".encode())
+    objects[pid - 1] = objects[pid - 1].replace(b"/Parent 0 0 R", f"/Parent {pages_obj} 0 R".encode())
 
 catalog_obj = add_obj(f"<< /Type /Catalog /Pages {pages_obj} 0 R >>".encode())
 
@@ -164,7 +158,7 @@ for i, obj in enumerate(objects, start=1):
 xref_pos = len(pdf)
 pdf += f"xref\n0 {len(objects)+1}\n".encode()
 pdf += b"0000000000 65535 f \n"
-for i in range(1, len(objects)+1):
+for i in range(1, len(objects) + 1):
     pdf += f"{offsets[i]:010d} 00000 n \n".encode()
 
 pdf += (f"trailer\n<< /Size {len(objects)+1} /Root {catalog_obj} 0 R >>\n"
@@ -173,4 +167,4 @@ pdf += (f"trailer\n<< /Size {len(objects)+1} /Root {catalog_obj} 0 R >>\n"
 with open(OUT, 'wb') as f:
     f.write(pdf)
 
-print(f'Created {OUT} with {len(pages)} pages and {len(all_lines)} text lines')
+print(f'Created {OUT} with {len(pages)} pages and {len(all_lines)} lines')
